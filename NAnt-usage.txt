@@ -1,0 +1,27 @@
+Usage : NAnt [options] <target> <target> ...
+Options :
+
+  -t[argetframework]:<text>      Specifies the framework to target
+  -defaultframework:<text>       Specifies the framework to target (Short format
+: /k)
+  -buildfile:<text>              Use given buildfile (Short format: /f)
+  -v[erbose][+|-]                Displays more information during build process
+  -debug[+|-]                    Displays debug information during build process
+
+  -q[uiet][+|-]                  Displays only error or warning messages during
+build process
+  -e[macs][+|-]                  Produce logging information without adornments
+  -find[+|-]                     Search parent directories for build file
+  -indent:<number>               Indentation level of build output
+  -D:<name>=<value>              Use value for given property
+  -logger:<text>                 Use given type as logger
+  -l[ogfile]:<filename>          Use value as name of log output file
+  -listener:<text>               Add an instance of class as a project listener
+  -ext[ension]:<text>            Load NAnt extensions from the specified assembl
+y
+  -projecthelp[+|-]              Prints project help information
+  -nologo[+|-]                   Suppresses display of the logo banner
+  -h[elp][+|-]                   Prints this message
+  @<file>                        Insert command-line settings from a text file.
+
+A file ending in .build will be used if no buildfile is specified.

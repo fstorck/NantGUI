@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68259D7A-1A1D-461F-9156-8F1C13C057A6}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>NAnt-Gui.Gui</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NAntGui.Gui</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/NAnt-Gui.Gui/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty Libraries\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAnt.Core, Version=0.91.3881.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Tools\nant-0.91-alpha2\bin\NAnt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Nant-Gui.Core\Nant-Gui.Core.csproj">
+      <Name>Nant-Gui.Core</Name>
+      <Project>{DEE131EE-4233-4ED3-8F31-956532A29E8F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NAnt-Gui.Framework\NAnt-Gui.Framework.csproj">
+      <Name>NAnt-Gui.Framework</Name>
+      <Project>{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NAnt-Gui.NAnt\NAnt-Gui.NAnt.csproj">
+      <Name>NAnt-Gui.NAnt</Name>
+      <Project>{B42F3791-EDD7-494A-9229-A565588F2EF0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlEditor\Project\XmlEditor.csproj">
+      <Project>{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}</Project>
+      <Name>XmlEditor</Name>
+    </ProjectReference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty Libraries\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlankBuildScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuildFileBrowser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DocumentWindow.Designer.cs">
+      <DependentUpon>DocumentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PropertyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="app.config" />
+    <Compile Include="Controls\OutputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PropertyWindow.Designer.cs">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScriptEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ScriptEditor.Designer.cs">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TargetsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TargetsWindow.Designer.cs">
+      <DependentUpon>TargetsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsArgs.cs" />
+    <Compile Include="IEditCommands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainFormSerializer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAntGuiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NAntGuiForm.Designer.cs">
+      <DependentUpon>NAntGuiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProjectForm.Designer.cs">
+      <DependentUpon>NewProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyShelf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RecentItems.cs" />
+    <Compile Include="NAntDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Images\File.ico" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DocumentWindow.resx">
+      <DependentUpon>DocumentWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OutputWindow.resx">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PropertyWindow.resx">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScriptEditor.resx">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TargetsWindow.resx">
+      <DependentUpon>TargetsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NAntGuiForm.resx">
+      <DependentUpon>NAntGuiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProjectForm.resx">
+      <DependentUpon>NewProjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="AssemblyInfo.build" />
+    <Content Include="Images\Build.png" />
+    <Content Include="Images\CloseAllDocuments.png" />
+    <Content Include="Images\CloseDocument.png" />
+    <Content Include="Images\CopyHS.png" />
+    <Content Include="Images\CutHS.png" />
+    <Content Include="Images\DeleteHS.png" />
+    <Content Include="Images\Edit_RedoHS.png" />
+    <Content Include="Images\Edit_UndoHS.png" />
+    <Content Include="Images\FormRunHS.png" />
+    <Content Include="Images\NewDocumentHS.png" />
+    <Content Include="Images\NewProject.png" />
+    <Content Include="Images\Open.png" />
+    <Content Include="Images\OpenHS.png" />
+    <Content Include="Images\Output.ico" />
+    <Content Include="Images\Output.png" />
+    <Content Include="Images\PasteHS.png" />
+    <Content Include="Images\PlayHS.png" />
+    <Content Include="Images\Properties.ico" />
+    <Content Include="Images\Properties.png" />
+    <Content Include="Images\RefreshDocViewHS.png" />
+    <Content Include="Images\SaveAllHS.png" />
+    <Content Include="Images\SaveHS.png" />
+    <Content Include="Images\StopHS.png" />
+    <Content Include="Images\Target.ico" />
+    <Content Include="Images\Target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(SolutionDir)Tools\nant-0.91-alpha2\bin\nant.exe" -nologo -q -t:net-2.0 -f:"$(ProjectDir)AssemblyInfo.build"</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1 @@
+Tools\nant-0.85\bin\nant.exe -t:net-2.0 -f:NAnt-Gui.build

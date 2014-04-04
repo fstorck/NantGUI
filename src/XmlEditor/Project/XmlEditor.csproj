@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}</ProjectGuid>
+    <RootNamespace>ICSharpCode.XmlEditor</RootNamespace>
+    <AssemblyName>XmlEditor</AssemblyName>
+    <OutputType>Library</OutputType>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>False</NoStdLib>
+    <NoConfig>False</NoConfig>
+    <RunPostBuildEvent>OnSuccessfulBuild</RunPostBuildEvent>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <StartAction>Program</StartAction>
+    <StartProgram>..\..\..\..\..\bin\SharpDevelop.exe</StartProgram>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>110100480</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>0618</NoWarn>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/XmlEditor/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>Full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugType>None</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty Libraries\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ICSharpCode.Core, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=f829da5c02be14ee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty Libraries\ICSharpCode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.Core.WinForms, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=f829da5c02be14ee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty Libraries\ICSharpCode.Core.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=f829da5c02be14ee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty Libraries\ICSharpCode.SharpDevelop.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop.Dom, Version=3.2.0.5505, Culture=neutral, PublicKeyToken=f829da5c02be14ee">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ThirdParty Libraries\ICSharpCode.SharpDevelop.Dom.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AssemblyInfo.cs" />
+    <Compile Include="Src\AddChildCommentCommand.cs" />
+    <Compile Include="Src\AddChildTextNodeCommand.cs" />
+    <Compile Include="Src\AddXmlNodeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\IAddXmlNodeDialog.cs" />
+    <Compile Include="Src\InsertCommentAfterCommand.cs" />
+    <Compile Include="Src\InsertCommentBeforeCommand.cs" />
+    <Compile Include="Src\InsertTextNodeAfterCommand.cs" />
+    <Compile Include="Src\InsertTextNodeBeforeCommand.cs" />
+    <Compile Include="Src\XmlCharacterDataTreeNode.cs" />
+    <Compile Include="Src\XmlCommentTreeNode.cs" />
+    <Compile Include="Src\XmlEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\XmlCompletionDataProvider.cs" />
+    <Compile Include="Src\XmlCompletionData.cs" />
+    <Compile Include="Src\XmlCompletionDataImageList.cs" />
+    <Compile Include="Src\XmlParser.cs" />
+    <Compile Include="Src\XmlSchemaCompletionData.cs" />
+    <Compile Include="Src\XmlSchemaCompletionDataCollection.cs" />
+    <Compile Include="Src\XmlFoldingStrategy.cs" />
+    <Compile Include="Src\QualifiedName.cs" />
+    <Compile Include="Src\XmlElementPath.cs" />
+    <Compile Include="Src\QualifiedNameCollection.cs" />
+    <Compile Include="Src\XmlCompletionDataCollection.cs" />
+    <Compile Include="Src\XmlDisplayBinding.cs" />
+    <Compile Include="Src\XmlView.cs" />
+    <Compile Include="Src\XmlSchemaManager.cs" />
+    <Compile Include="Src\Parser.cs" />
+    <Compile Include="Src\ValidateXmlCommand.cs" />
+    <Compile Include="Src\XmlSchemasPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\XmlSchemaListBoxItem.cs" />
+    <Compile Include="Src\XmlEditorAddInOptions.cs" />
+    <Compile Include="Src\SelectXmlSchemaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Src\CodeCompletionPopupCommand.cs" />
+    <Compile Include="Src\XmlSchemaAssociation.cs" />
+    <Compile Include="Src\XmlSchemaAssociationListBoxItem.cs" />
+    <Compile Include="Src\XmlEditorOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\CreateSchemaCommand.cs" />
+    <Compile Include="Src\EncodedStringWriter.cs" />
+    <EmbeddedResource Include="Resources\XmlSchemasPanel.xfrm" />
+    <EmbeddedResource Include="Resources\SelectXmlSchema.xfrm" />
+    <EmbeddedResource Include="Resources\XmlEditorOptionsPanel.xfrm" />
+    <EmbeddedResource Include="Resources\XmlCommentTreeNodeIcon.png" />
+    <None Include="PostBuildEvent.proj" />
+    <None Include="XmlEditor.addin">
+    </None>
+    <Compile Include="Src\RunXslTransformCommand.cs" />
+    <Compile Include="Src\XslOutputView.cs" />
+    <Compile Include="Src\AssignStylesheetCommand.cs" />
+    <Compile Include="Src\OpenStylesheetCommand.cs" />
+    <Compile Include="Src\StylesheetAssignedCondition.cs" />
+    <Compile Include="Src\FormatXmlCommand.cs" />
+    <Compile Include="Src\XPathQueryPad.cs" />
+    <Compile Include="Src\XPathQueryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\XmlNamespace.cs" />
+    <Compile Include="Src\XPathNodeMatch.cs" />
+    <Compile Include="Src\XPathNodeTextMarker.cs" />
+    <Compile Include="Src\RemoveXPathHighlightingCommand.cs" />
+    <Compile Include="Src\GoToSchemaDefinitionCommand.cs" />
+    <Compile Include="Src\GoToSchemaDefinitionEditAction.cs" />
+    <Compile Include="Src\XmlTreeEditor.cs" />
+    <Compile Include="Src\IXmlTreeView.cs" />
+    <Compile Include="Src\XmlTreeView.cs" />
+    <Compile Include="Src\XmlTreeViewContainerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Src\XmlTreeViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Resources\XmlElementTreeNodeIcon.png" />
+    <Compile Include="Src\XmlElementTreeNode.cs" />
+    <Compile Include="Src\XmlTextTreeNode.cs" />
+    <EmbeddedResource Include="Resources\XmlTextTreeNodeIcon.png" />
+    <Compile Include="Src\XmlAttributePropertyDescriptor.cs" />
+    <Compile Include="Src\XmlAttributeTypeDescriptor.cs" />
+    <Compile Include="Src\XmlEncoder.cs" />
+    <Compile Include="Src\AddAttributeCommand.cs" />
+    <Compile Include="Src\RemoveAttributeCommand.cs" />
+    <Compile Include="Src\AddChildElementCommand.cs" />
+    <Compile Include="Src\InsertElementBeforeCommand.cs" />
+    <Compile Include="Src\InsertElementAfterCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,125 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3BAD269C-8E8B-46AA-95A3-0B0C719778B3}"
+	ProjectSection(SolutionItems) = preProject
+		Ant.ico = Ant.ico
+		NAnt-Gui.Docs\BlankProject.build = NAnt-Gui.Docs\BlankProject.build
+		NAnt-Gui.Docs\Bugs.txt = NAnt-Gui.Docs\Bugs.txt
+		build_number.txt = build_number.txt
+		NAnt-Gui.Docs\Changelog.txt = NAnt-Gui.Docs\Changelog.txt
+		NAnt-Gui.Docs\Install.txt = NAnt-Gui.Docs\Install.txt
+		NAnt-Gui.Docs\License.txt = NAnt-Gui.Docs\License.txt
+		NAnt-Gui.build = NAnt-Gui.build
+		NAnt-Gui.iss = NAnt-Gui.iss
+		NAnt-Gui.Docs\Readme.Txt = NAnt-Gui.Docs\Readme.Txt
+		NAnt-Gui.Docs\SharpDevelop-license.txt = NAnt-Gui.Docs\SharpDevelop-license.txt
+		NAnt-Gui.Docs\Todo.txt = NAnt-Gui.Docs\Todo.txt
+		NAnt-Gui.Docs\WeifenLuo.WinFormsUI.Docking-license.txt = NAnt-Gui.Docs\WeifenLuo.WinFormsUI.Docking-license.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFiles", "TestFiles", "{F8B2CA2B-1677-44BF-AB5F-AA16FCB0DECB}"
+	ProjectSection(SolutionItems) = preProject
+		Nant-Gui.TestFiles\Calling Targets.build = Nant-Gui.TestFiles\Calling Targets.build
+		Nant-Gui.TestFiles\FileToLoad.txt = Nant-Gui.TestFiles\FileToLoad.txt
+		Nant-Gui.TestFiles\IncludeTest.build = Nant-Gui.TestFiles\IncludeTest.build
+		Nant-Gui.TestFiles\IncludeTest.inc = Nant-Gui.TestFiles\IncludeTest.inc
+		Nant-Gui.TestFiles\LoadFileTest.build = Nant-Gui.TestFiles\LoadFileTest.build
+		Nant-Gui.TestFiles\Multiple Properties.build = Nant-Gui.TestFiles\Multiple Properties.build
+		Nant-Gui.TestFiles\NAnt.build = Nant-Gui.TestFiles\NAnt.build
+		Nant-Gui.TestFiles\NHibernate.build = Nant-Gui.TestFiles\NHibernate.build
+		Nant-Gui.TestFiles\NHibernate_default.build = Nant-Gui.TestFiles\NHibernate_default.build
+		Nant-Gui.TestFiles\Readonly Props.build = Nant-Gui.TestFiles\Readonly Props.build
+		Nant-Gui.TestFiles\test.build = Nant-Gui.TestFiles\test.build
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nant-Gui.Core", "Nant-Gui.Core\Nant-Gui.Core.csproj", "{DEE131EE-4233-4ED3-8F31-956532A29E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui", "NAnt-Gui\NAnt-Gui.csproj", "{0AEAC6D0-BB00-465C-8580-D52160F60395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Unittests", "NAnt-Gui.Unittests\NAnt-Gui.Unittests.csproj", "{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.NAnt", "NAnt-Gui.NAnt\NAnt-Gui.NAnt.csproj", "{B42F3791-EDD7-494A-9229-A565588F2EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Framework", "NAnt-Gui.Framework\NAnt-Gui.Framework.csproj", "{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.MSBuild", "NAnt-Gui.MSBuild\NAnt-Gui.MSBuild.csproj", "{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Gui", "NAnt-Gui.Gui\NAnt-Gui.Gui.csproj", "{68259D7A-1A1D-461F-9156-8F1C13C057A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlEditor", "XmlEditor\Project\XmlEditor.csproj", "{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nant.InnoSetup.Tasks", "Nant.InnoSetup.Tasks\Nant.InnoSetup.Tasks.csproj", "{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		StrongMagic|Any CPU = StrongMagic|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEAC6D0-BB00-465C-8580-D52160F60395}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{B42F3791-EDD7-494A-9229-A565588F2EF0}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{50B75C58-CEE2-4CC5-BFB2-0462187C59C3}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{68259D7A-1A1D-461F-9156-8F1C13C057A6}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.StrongMagic|Any CPU.ActiveCfg = Release|Any CPU
+		{D25C196C-39B0-41B9-901F-B6A2CD67EBB4}.StrongMagic|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8B2CA2B-1677-44BF-AB5F-AA16FCB0DECB} = {3BAD269C-8E8B-46AA-95A3-0B0C719778B3}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NAnt-Gui\NAnt-Gui.csproj
+	EndGlobalSection
+EndGlobal

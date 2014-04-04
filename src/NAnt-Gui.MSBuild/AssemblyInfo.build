@@ -1,0 +1,21 @@
+<project name="CreateAssemblyInfo" default="main" xmlns="http://nant.sf.net/release/0.85/nant.xsd">
+	<target name="main" description="main">
+		<loadfile file="..\build_number.txt" property="nantgui.version" />
+
+		<asminfo output="Properties\AssemblyInfo.cs" language="CSharp">
+		    <imports>
+		        <import namespace="System.Reflection" />
+		    </imports>
+		    <attributes>
+		        <attribute type="AssemblyVersionAttribute" value="${nantgui.version}" />
+		        <attribute type="AssemblyTitleAttribute" value="NAnt-Gui.MSBuild" />
+		        <attribute type="AssemblyDescriptionAttribute" value="Executes and edits NAnt build scripts" />
+		        <attribute type="AssemblyCopyrightAttribute" value="Copyright © 2005, Colin Svingen" />
+		        <attribute type="AssemblyProductAttribute" value="NAnt-Gui" />
+		    </attributes>
+		    <references>
+		        <include name="System.EnterpriseServices.dll" />
+		    </references>
+		</asminfo>
+	</target>
+</project>

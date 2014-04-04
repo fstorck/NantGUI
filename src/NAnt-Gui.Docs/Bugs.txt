@@ -1,0 +1,48 @@
+
+1.9.*:
+FIXED: Figure out why the NAnt-Gui projects prebuild.bat doesn't work anymore
+FIXED: If you sticky the output box it loses it's formatting/highlighting
+FIXED: If using a different regional setting for currency and numbers (ie: Italian) the targets window docks with 0 height
+
+1.5.0:
+FIXED:  Some properties were showing up as none default when default
+FIXED:  If you change a property's value then switch tabs, it retains the changed value.  However,
+		if you run the file, then switch tabs, it will redefault when you switch back.
+FIXED:  Changing property values is broken AGAIN!!!
+FIXED:  Parser doesn't follow includes
+FIXED:  Include files aren't xml syntax highlighted.  
+FIXED:  Include files throw error on load because the project can't parse the file
+FIXED:  If you run an unsaved new file and cancel the file save dialog, the run should be aborted
+FIXED:  Reload shouldn't be enabled on a new file
+FIXED:	If you unsticky the output box it loses it's formatting/highlighting
+
+1.4.0:
+FIXED:  If you click the close button on the tab collection, the file *sort of* closes. Should 
+		be disabled (NOTE: Removed close button from control and disabled it)
+FIXED:	If you load a file when you have changes to an open file, the file is loaded and your 
+		changes are lost!
+FIXED:  If you change a file, click new, click cancel, a new file is still created (changes are 
+		lost!)
+FIXED:  If a target is "called" or is depended on, you can't override the values of its properties
+		because it doesn't show up in the list of valid targets
+FIXED:  If you change a value on the propertygrid, then hit reload, the value doesn't change back 
+		to the files value. If you hit reload again the value will change back.
+FIXED:  If you delete a property, or create a new one and save the file it doesn't reload the 
+		properties. This is true even if you reload the file.
+FIXED:  008651 Exception raised parsing 2 tstamps for to the same property
+FIXED:  If the app crashes when it's loading it should remove the file from the list so it 
+		doesn't keep reloading the file and crashing
+FIXED:  008276 Exception Error when open NHibernateSolution.build
+FIXED:  007607 Crash using Italian regional settings
+FIXED:  007388 Global props set via GUI don't "take"? 
+FIXED:  008322 Error parsing Nant 0.85 rc4
+FIXED:  Build doesn't enable when you save a new file
+FIXED:  Tabs don't actually get closed (change a file, click new, close app, you'll get file not 
+		saved dialog)
+
+1.3.2:
+FIXED: Hookup Leave event on outputbox and scripttabpage so the mediator can null reference _editCommand
+FIXED: Targets reset when you build, so selected targets are reset
+FIXED: Stop/Cancel build is never enabled (toolbar and menu)
+FIXED: You can close the current build file, then stop becomes enabled
+FIXED: No syntax highlighting on new files

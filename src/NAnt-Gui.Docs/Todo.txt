@@ -1,0 +1,97 @@
+Required for 2.0
+----------------
+- Test what happens if .Net 3.0 or 3.5 are NOT installed.  Make sure that it runs with only 2.0.
+- Test what happens if .Net 2.0 not installed.  App shouldn't install (check in installer).
+- Test what happens if MSbuild is not installed (comes with framework?).
+- General testing
+
+(FIXED): During build, build_number.txt is asked to be reloaded twice (first time it's not actually reloaded)
+(CANCELLED): New NAnt project needs to be parsed; Can't be parsed until it's saved.
+(FIXED): Drag-Drop stopped working
+(DONE): Figure out what to do with files with unknown extensions
+(DONE): Fix all UI events
+(DONE): Figure out which MSBuild to use.  Uses 2.0, because this app is tied to 2.0
+(DONE): Remove all the bitmap images
+(FIXED): SaveAs on new document should change the window title
+(DONE): Save (on new)/SaveAs should update the menuitem text in the documents menu
+(DONE): Document changed/not (menu item, tab title, window title) should have/not have an * next to the name
+(FIXED): SaveAs on new document should change the documents menu item
+(FIXED): Should prompt the user if reloading a changed document	
+(FIXED): New documents that are unsaved should not load at startup the next time.
+(DONE): Fix all UI events: Consider using the Application.Idle event to update the display (enabled/disabled menu items and buttons) 
+	    like Greg.XmlEditor, his code is not a tangled mess	
+(DONE): Fix all UI events: Focused document is new; Reload should be disabled
+(DONE): Fix all UI events: 1 or more documents open
+(DONE): Fix all UI events: Undo/Redo enabled/disabled when files are open/closed.
+(DONE): Fix all UI events: No documents open
+(FIXED): If the user has an open blank file and it is deleted, then they keep it open, 
+		 then close without saving, they will not be prompted to save it. (see: Unsaved property)  
+(DONE): Make an UnSaved property on the Document instead of IsDirty?  In certain instances, like keeping the file open after
+ 	    it's been deleted, IsDirty doesn't really make sense (forces me to delete the contents so user is prompted for save)  
+(FIXED): BUG: The properties, targets and output don't show up on first install
+(DONE): Make sure you can override property values
+(DONE): Unistall of the app should remove the path from the PATH environment variable
+(DONE): Add basic MSBuild support
+(CANCELLED): 1.9/2.0 should probably be a different GUID (AppId) and Program Group so both 1.x series and 2.x can be installed at once?
+(FIXED): WTF: Where's my ctrl+space code completion???
+(FIXED): BUG: During build, play button is not disabled
+(FIXED): BUG: edit file, click the close menuitem, will be asked twice to save.
+(DONE): Update copyright for nant
+(DONE): Get schema for MSBuild to give to XmlEditor, figure out how to switch between the schemas for nant and msbuild	
+	
+Suggested for 2.0.1
+-------------------	
+- Remove NAnt-Gui.Framework dependency on NAnt.Core for commandline option parsing
+- Hook up the PropertyGrid editor context menu to the Edit commands main menu
+- If the file is readonly, make the editor readonly
+	* What happens if the user opens the file, then changes the readonly flag?
+- Make my own XmlEditorControl so I don't have to repeatedly modify sharpdevelop's code 
+	(might not work because I had to modify more than the control)	
+- Show/Hide Build menu and Build toolstrip for GenericFiles
+	+ In general, need different behaviours for the three different file types
+- Bug: MSBuild targets don't show up if you have the description setting set	  
+- Create custom commandline options that make sense for msbuild, nant, and multiple tabs
+	* Associate command line options for each file
+- New MSBuild project	
+
+For 2.1 and beyond
+------------------
+- Add an option to turn on file parsing in properties and turn the property editor to a file picker: [Editor(typeof(FileNameEditor), typeof(UITypeEditor))]
+- Rename 
+	* NAntDocument NAntGuiDocument
+	* IBuildScript IScriptParser
+	* BuildScript ScriptParserBase
+	* NAntBuildScript NAntScriptParser	
+	* MSBuildScript MSBuildScriptParser
+	* BuildTarget BuildTargetBase
+	* BuildProperty BuildPropertyBase
+- Figure out if there is a way to override the default behavior of the xmleditor sharpdevelop control to allow drag and drop of
+  documents into an existing document. By default it will allow drag and drop of text, but with the drag-enter method it should be able 
+  to handle different results for different dragged objects (text vs file)
+- Dynamic help in the text editor with NAnt
+- Printing
+- Find and replace
+- Create options for LineNumbers, Folding, TabSpaces, etc...
+- Port NAnt-Gui to SharpDevelop.Core?  Would thereby eleminate the need to use the text editor 
+  control.  Would POTENTIALLY give access to add-in architecture, find/replace dialog, etc...  these things depend on Sharpdevelop, so some
+  (lots?) of rewritting would still be required. If it will be difficult to bring in changes from new sharpdevelop releases, then there is
+  little benifit to doing this.
+- CODE Generation
+	* Need to recurse and fill in the body of elements with sequences/choices
+	* Create required attributes
+	* How to implement file picker for filenames?
+		- by file or dir on the end of the attribute?
+	* What about booleans and other values?
+	* How to determine if end tag is required	
+	* Consider doing like NAntPad and creating a specific XSD that is easier to generate code from (supports bool, file and dir types)
+- Rewrite the parser so that the location of elements is known
+	* Add loadfile parsing
+	* Add sysinfo parsing
+	* Add regex parsing
+	* Right-click target in tree view gives option to "Go to Target"
+- Add a property window to change nant/msbuild settings after nant-gui is loaded
+- Add on the fly parsing back in (need to suppress parsing errors and allow an unsaved document to be parsed)
+	* show errors in an error window like VS.Net show errors
+- Put save of buildfiles into THREADS (More difficult than it first appears)
+- Validate build files 
+	* show errors in an error window like VS.Net show errors

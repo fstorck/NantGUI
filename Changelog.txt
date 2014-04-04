@@ -1,0 +1,124 @@
+1.9.2:
+
+1.9.1:
+(DONE): Filewatcher: Ensure that when the file is deleted and kept open, the user is prompted for save upon close		
+(DONE): Filewatcher: User should only be prompted about file changes when the application has focus.	
+(DONE): Filewatcher: When the user declines to reload a changed file, it should not prompt again
+(DONE): Filewatcher: File deleted: If the user selects yes, it keeps asking and keeps adding asterisks		
+(DONE): Filewatcher: File deleted: If the user selects no, it crashes because the document dictionary is modify during enumeration	
+(DONE): BUG: new file saved with save as isn't marked as existing	
+(DONE): Filewatcher: Saving the document changes which targets are selected (caused by filewatcher firing during save)
+(DONE): Filewatcher: should prompt the user, when the file changes, if they want to reload it
+(DONE): Filewatcher: Rewrite to use Application.Idle polling technique instead
+(DONE): BUG: New project doesn't prompt for save on close.
+(DONE): BUG: New project doesn't work.  Filewatcher failes.
+(DONE): BUG: Errors when loading/saving a file are not caught
+(DONE): Figure out why tabcompletion doesn't work on the xmlcontrol
+(DONE): Figure out why folding doesn't work on the xmlcontrol
+(DONE): Closing the app while running a build throws a "cannot access disposed object" in OutputWindow.WriteOutput
+(DONE): Active document should be checked
+(DONE): Clicking the menuitem shouldn't reload the document
+(DONE): Window menu that lists all open tabs
+(DONE): create it in the controller and pass it into the NAntDocument.  The window isn't the right place for it, but it's there
+	    because it needs a control to synchronize the threading
+(DONE): Add save all menu item and toolstrip button
+(DONE): Closing multiple tabs that require saving works just like SharpDevelop (cancel is only valid for current document)
+(DONE): Implement Run menuitem on the targets tree
+(DONE): Implement tool tip on targets tree
+(DONE): Add 'close all but this' menu item to tab right click
+(DONE): Add 'save' menu item to tab right click	
+(DONE): Add 'close all tabs' menu item to tab right click
+(DONE): Add 'close other tabs' menu item to tab right click	
+(DONE): Should save the locations of the toolstrips on the mainform	
+(DONE): New Project code implementation
+
+1.9.0:
+(DONE): Update website to show that NAnt-Gui runs in .Net 2.0
+(DONE): Merge the Dotnet-2.0 branch into the trunk
+(DONE): Unsaved/New document should prompt for save on close of the app
+(DONE): Unsaved/New document should prompt for save when the X on the dockpanel is clicked
+(DONE): In general, reloading the document changes the cursor to 1,1
+(DONE): Saving a file reloads it, which moves the cursor to 1,1
+(DONE): Should only save the document, when running it, if it has changes
+(DONE): Move SourceFile into NAntDocument, put the filesystem watcher on the DocumentWindow, 
+		and remove all the save, saveas and load methods from NAntDocument
+(DONE): Try to remove some of the redundant event handlers and use anonymous delegates instead	
+(DONE): Add in a filewatcher for each file
+(DONE): Undo and redo should be disabled if the document has nothing to undo/redo, enabled otherwise
+(DONE): When the document changes, the undo/redo button states should be updated
+(DONE): Loading the app twice shouldn't throw an 'Build file not found - [blank] was not found.'
+(DONE): Thread the parsing of the build scripts on load
+(DONE): Figure out if drag&drop not working on the actual documents is a limitation of the texteditor control (it is, you can drag and drop text and it is pasted)
+(DONE): Ensure that drag&drop works on output, properties and targets windows too
+(DONE): Bug: load app hit control-v, watch it crash
+(DONE): Save the WordWrap state to the Settings class
+(CANT): Make WordWrap Editor work (Not supported in the xmleditor control)
+(DONE): Fix Dock settings being loaded on start
+(DONE): Ensure that double-clicking a .build file makes it load in the app if the app is already loaded (as far as I can figure the commandline arguments are being overridden by the by the dockpanel.LoadXML)
+(DONE): Make loading load all the previously loaded documents an option
+(DONE): Store open files in settings and when NAnt-Gui is loaded, load all the previously loaded
+(DONE): Fix Dock settings being loaded on start
+(DONE): Split Word Wrap into WordWrap Output and WordWrap Editor
+(DONE): Ensure that drag&drop works on the form
+(DONE): Selecting different tabs doesn't update the property and target windows
+(DONE): If you open a document, close it, then open it again the app crashes
+(DONE): I think the maincontroller and the dockpanel need to be tied together.  If the document was put
+  in the document window then the main controller wouldn't have to keep track of the selected document and 
+  window.  The dock panel already keeps track of the "active document" or active tab.  Might need to be 
+  restructured
+(DONE): Move DockingConfig to the user folder instead of the application folder  
+(DONE): Need right-click context menu in text editor
+(DONE): Implement IEditControls on xmlcontrol (because scripteditor was removed)
+(DONE): Hide Editor property in DocumentWindow.  Fully ecapsulate it.
+(DONE): Add WinFormsUI docking to replace MagicLibrary	
+(DONE): Use Microsoft.VisualBasic.ApplicationServices to allow multiple files to open 
+(DONE): Fix the build file because it doesn't work with <solution> anymore
+(DONE): Allow only one instance of NAnt-Gui to load
+(DONE): Allow additional files that are double-clicked to load in a new tab
+(DONE): Converted ToolBar to ToolStrip
+(DONE): Converted Main Menu to MenuStrip
+(DONE): Converted StatusBar to StatusStrip
+(DONE): Converted Context Menus to MenuStrip
+(DONE - Already in there):  Write in documentation about having to copy the nant bin directory files to the NAnt-Gui Debug directory
+(DONE): Change New to New flyout with New blank file and New NAnt Project
+(DONE): Figure out how to get the tag completion (ie: type <wak> and </wak> appears) from Greg.XmlEditor
+(DONE): Figure out why the folding doesn't work and completion
+(DONE): Fix window settings being saved on exit and loaded on start
+
+1.5.0:
+(DONE): Change the way that NAntBuildScript.cs:LoadNonProjectProperty:134 works.  Right now it adds all
+  properties from the Gui regardless of whether the property's value has change.  Only propertys 
+  with changed values should be added.
+(DONE): Clean up how property bag works.  AKA, the events should change the values of the properties and
+  the Tag property of the propertyspec class can be removed as you don't need to store the actual 
+  nant property in the propertybag.properties collection
+(DONE): Multiple Tabs
+	* Adjust right-click context menu on tabs so it only shows on tabs
+	* Only allow one copy of a file to be loaded at a time
+(DONE): Made sure NAnt-Gui works with .Net 2.0
+(DONE): Reorder projects.  Add a Gui project and move the UI code into it
+(CANCELLED: Didn't work): Modify the app.config file so that it points to the nant directory, then 
+	modify the app and installer so that it loads the tasks from the nant directory instead of 
+	having to have the nant bin directory copied into the nant-gui bin directory
+(CANCELLED: SLiNgshoT is deprecated): Add SLiNgshoT tool window to tools menu
+
+1.4.0:
+(DONE) New build file functionality (test to make sure save, reload, build, either work, or ignored on new files)
+
+PRE 1.4.0:
+(DONE) Switch output windows to fixed-width font so NAnt output displays accurately
+(DONE) Put scroll bars on the editor window
+(DONE) Relatively reference nant for the prebuild step so it doesn't have to be in the path
+(DONE) View output menuitem
+(DONE) icon for output
+(DONE) Move Menus into separate files
+(DONE) Write MainFormMediator
+(DONE) Enable drag and drop on the editor and tabs
+(DONE) Fix copy and paste menu items (they only operate on text in the output window)
+(CANCELLED: Non-standard behaviour) Add drag and drop text into the editor
+(DONE) Make stop build menu item
+(DONE) Hookup output and tabcontrol to mediator so it always knows which has focus for copy, wordwrap, paste, etc...
+(DONE) Add cut, paste, and delete menuitems (diabled when output box has focus)
+(DONE) Add copy, paste, undo, redo icons
+(DONE) Create save output default initial dir reg key
+(DONE) Modify the tab control so that it is hooked up to the tabchange event and figures out the selected tab then instead of always searching for the selected tab)

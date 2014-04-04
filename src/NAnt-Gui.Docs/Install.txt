@@ -1,0 +1,8 @@
+Download the latest stable release, or if you want to help test, 
+download the latest development release.
+
+Save the download to somewhere on your computer and double-click 
+the installer.  The installer will guide you through the rest of 
+the process.
+
+The .Net Framework 2.0 is required to run the application.
