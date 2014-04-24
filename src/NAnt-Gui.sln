@@ -36,6 +36,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nant-Gui.Core", "Nant-Gui.Core\Nant-Gui.Core.csproj", "{DEE131EE-4233-4ED3-8F31-956532A29E8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui", "NAnt-Gui\NAnt-Gui.csproj", "{0AEAC6D0-BB00-465C-8580-D52160F60395}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEE131EE-4233-4ED3-8F31-956532A29E8F} = {DEE131EE-4233-4ED3-8F31-956532A29E8F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Unittests", "NAnt-Gui.Unittests\NAnt-Gui.Unittests.csproj", "{C5ADC7F8-B5ED-4520-BA9F-8E4E3290A12B}"
 EndProject
@@ -45,7 +48,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Framework", "NAnt-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.MSBuild", "NAnt-Gui.MSBuild\NAnt-Gui.MSBuild.csproj", "{CE9DB1E7-8666-4F42-8817-C7A6F1117A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Gui", "NAnt-Gui.Gui\NAnt-Gui.Gui.csproj", "{68259D7A-1A1D-461F-9156-8F1C13C057A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAnt-Gui.Gui", "Nant-Gui.Gui\NAnt-Gui.Gui.csproj", "{68259D7A-1A1D-461F-9156-8F1C13C057A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlEditor", "XmlEditor\Project\XmlEditor.csproj", "{6B717BD1-CD5E-498C-A42E-9E6A4584DC48}"
 EndProject

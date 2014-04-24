@@ -213,3 +213,13 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+src/NAnt-Gui.Core/Properties/AssemblyInfo.cs
+src/NAnt-Gui.Framework/Properties/AssemblyInfo.cs
+src/NAnt-Gui.MSBuild/Properties/AssemblyInfo.cs
+src/NAnt-Gui.NAnt/Properties/AssemblyInfo.cs
+src/NAnt-Gui.Unittests/Properties/AssemblyInfo.cs
+src/NAnt-Gui/Properties/AssemblyInfo.cs
+src/Nant-Gui.Gui/Properties/AssemblyInfo.cs
+src/Nant-Gui.Gui/Properties/AssemblyInfo.cs
+src/Nant-Gui.Gui/Properties/AssemblyInfo.cs
+src/NAnt-Gui.Core/Properties/AssemblyInfo.cs
